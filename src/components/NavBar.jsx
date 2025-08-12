@@ -19,8 +19,10 @@ const NavBar = ({navigateTo,currentPage}) => {
         <div className='hidden md:flex items-center space-x-4'>
           <button onClick={()=>navigateTo('home')} className={linkClasses('home')}>
             Home</button>
+          <button onClick={()=>navigateTo('about_us')} className={linkClasses('about_us')}>
+            About Us</button>
           <button onClick={()=>navigateTo('contact')} className={linkClasses('contact')}>
-            About/Contact
+            Contact
           </button>
            <button onClick={()=>navigateTo('register')} className={linkClasses('register')}>
             Student Registeration

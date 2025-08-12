@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 import NavBar from './components/NavBar'
-import HomePage from './components/Home'
-import RegisterationPage from './components/RegisterationPage'
-import ContactPage from './components/ContactPage'
+import HomePage from './components/Pages/Home'
+import RegisterationPage from './components/Pages/RegisterationPage'
+import ContactPage from './components/Pages/ContactPage'
 import Footer from './components/Footer'
+import About_us from './components/Pages/About_us'
 
 const App = () => {
   const [page,setPage]=useState('home')
+  
   const navigateTo = (pageName)=>{
     setPage(pageName);
   }
@@ -17,7 +19,10 @@ const App = () => {
     return <ContactPage />
   } else if(page==='register'){
     return <RegisterationPage />
-  }else{
+  }else if(page==='about_us'){
+    return <About_us />
+  }else
+    {
     <div>Page Not Found</div>
   }
   }
