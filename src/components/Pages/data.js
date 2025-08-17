@@ -7,8 +7,8 @@ export const coursesData = [
 ];
 
 export const facultyData = [
-  { name: "Jasiel dsilva", department: "Computer Science", expertise: "Useles" },
-  { name: "Jasiel dsilva", department: "Bachelor of Science in Information Technology", expertise: "Useless" },
-  { name: "Jasiel dsilva", department: "Computer Engineering", expertise: "Useless" },
-  { name: "Jasiel dsilva", department: "Bachelor of Science in Data Science", expertise: "Useless" },
+  { name: "Mrs. Rinjal Jain", department: "Computer Science" },
+  { name: "Mrs. Gauri Shankar Singh", department: "Bachelor of Science in Information Technology" },
+  { name: "Ms.  Sidranaaz Qazi", department: "Computer Engineering"},
+  { name: "Ms.  Ambreen Shaikh", department: "Bachelor of Science in Data Science"},
 ];

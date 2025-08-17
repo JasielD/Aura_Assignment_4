@@ -107,13 +107,13 @@ const handleChange = (e) => {
             <label className="block text-sm font-medium text-gray-700">Class</label>
             <input type="text" name="class" value={formData.class} 
             onChange={handleChange} placeholder="e.g., 2nd Year" 
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2" />
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700">Stream</label>
             <input type="text" name="stream" value={formData.stream} 
             onChange={handleChange} placeholder="e.g., BSc-IT"
-             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm" />
+             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-2" />
           </div>
           <div className="md:col-span-2 text-center">
             <button type="submit" 

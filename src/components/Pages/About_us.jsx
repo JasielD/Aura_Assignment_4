@@ -20,15 +20,15 @@ const About_us = () => {
         <h2 className='text-3xl font-bold text-gray-800 mb-6 border-t pt-8'>A Message from the Principal</h2>
         <div className="flex flex-col md:flex-row items-center gap-8 bg-gray-50 p-6 rounded-full">
           <img 
-            src="" 
+            src="src\Public\Principal.jpg" 
             alt="College Principal" 
             className="w-40 h-40 rounded-full object-cover border-4 border-white"
           />
           <div>
-            <h3 className="text-2xl font-semibold text-gray-700">Dr. Aura Pereira</h3>
-            <p className="text-gray-500 mb-4">Bsc-It Graduate</p>
+            <h3 className="text-2xl font-semibold text-gray-700">Dr. Anagha Parag</h3>
+            
             <p className='text-gray-600 leading-relaxed'>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis itaque ullam quae ipsa! Quaerat fuga quae incidunt deleniti minima est ducimus illum, amet animi cupiditate beatae fugit ipsa nostrum iusto?</p>
+              It is my pleasure to welcome you to our institution. I believe education is not only about academic success but also about building values, confidence, and character. Together, let us create an environment where every learner is inspired to explore, grow, and achieve their dreams.</p>
           </div>
         </div>
     </div>
@@ -52,12 +52,11 @@ const About_us = () => {
             {facultyData.map((member, index) => (
                 <div key={index} className="bg-gray-50 p-4 rounded-full flex items-center gap-4">
                     <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-xl font-bold text-gray-500 flex-shrink-0">
-                        {member.name.charAt(0)}
+                        {member.name.charAt(5)}
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold text-gray-800">{member.name}</h3>
                         <p className="text-gray-600">{member.department}</p>
-                        <p className="text-sm text-gray-600">Expertise: {member.expertise}</p>
                     </div>
                 </div>
             ))}
